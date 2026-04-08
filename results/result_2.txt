@@ -1,0 +1,95 @@
+Model Performance Results
+=========================
+
+RandomForest
+-------------------------
+Accuracy : 0.5800
+Precision: 0.3501
+Recall   : 0.5519
+F1 Score : 0.4284
+
+Confusion Matrix:
+[[6083 4205]
+ [1839 2265]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.77      0.59      0.67     10288
+           1       0.35      0.55      0.43      4104
+
+    accuracy                           0.58     14392
+   macro avg       0.56      0.57      0.55     14392
+weighted avg       0.65      0.58      0.60     14392
+
+====================================
+
+LogisticRegression
+-------------------------
+Accuracy : 0.6303
+Precision: 0.3649
+Recall   : 0.4003
+F1 Score : 0.3818
+
+Confusion Matrix:
+[[7428 2860]
+ [2461 1643]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.75      0.72      0.74     10288
+           1       0.36      0.40      0.38      4104
+
+    accuracy                           0.63     14392
+   macro avg       0.56      0.56      0.56     14392
+weighted avg       0.64      0.63      0.64     14392
+
+====================================
+
+DecisionTree
+-------------------------
+Accuracy : 0.5559
+Precision: 0.3364
+Recall   : 0.5731
+F1 Score : 0.4239
+
+Confusion Matrix:
+[[5648 4640]
+ [1752 2352]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.76      0.55      0.64     10288
+           1       0.34      0.57      0.42      4104
+
+    accuracy                           0.56     14392
+   macro avg       0.55      0.56      0.53     14392
+weighted avg       0.64      0.56      0.58     14392
+
+====================================
+
+XGBoost
+-------------------------
+Accuracy : 0.6071
+Precision: 0.3638
+Recall   : 0.5049
+F1 Score : 0.4229
+
+Confusion Matrix:
+[[6665 3623]
+ [2032 2072]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.77      0.65      0.70     10288
+           1       0.36      0.50      0.42      4104
+
+    accuracy                           0.61     14392
+   macro avg       0.57      0.58      0.56     14392
+weighted avg       0.65      0.61      0.62     14392
+
+====================================
+

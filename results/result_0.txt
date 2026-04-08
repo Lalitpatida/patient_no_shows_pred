@@ -1,0 +1,72 @@
+Model Performance Results
+=========================
+
+RandomForest
+-------------------------
+Accuracy : 0.5846
+Precision: 0.3531
+Recall   : 0.5544
+F1 Score : 0.4314
+
+Confusion Matrix:
+[[6146 4155]
+ [1823 2268]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.77      0.60      0.67     10301
+           1       0.35      0.55      0.43      4091
+
+    accuracy                           0.58     14392
+   macro avg       0.56      0.58      0.55     14392
+weighted avg       0.65      0.58      0.60     14392
+
+====================================
+
+LogisticRegression
+-------------------------
+Accuracy : 0.7139
+Precision: 0.4071
+Recall   : 0.0139
+F1 Score : 0.0269
+
+Confusion Matrix:
+[[10218    83]
+ [ 4034    57]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.72      0.99      0.83     10301
+           1       0.41      0.01      0.03      4091
+
+    accuracy                           0.71     14392
+   macro avg       0.56      0.50      0.43     14392
+weighted avg       0.63      0.71      0.60     14392
+
+====================================
+
+DecisionTree
+-------------------------
+Accuracy : 0.6950
+Precision: 0.3706
+Recall   : 0.1046
+F1 Score : 0.1632
+
+Confusion Matrix:
+[[9574  727]
+ [3663  428]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.72      0.93      0.81     10301
+           1       0.37      0.10      0.16      4091
+
+    accuracy                           0.69     14392
+   macro avg       0.55      0.52      0.49     14392
+weighted avg       0.62      0.69      0.63     14392
+
+====================================
+
