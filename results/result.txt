@@ -1,0 +1,26 @@
+Model Performance Results
+=========================
+
+XGBoost
+-------------------------
+Accuracy : 0.4083
+Precision: 0.3003
+Recall   : 0.8264
+F1 Score : 0.4405
+
+Confusion Matrix:
+[[2547 7884]
+ [ 711 3384]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.78      0.24      0.37     10431
+           1       0.30      0.83      0.44      4095
+
+    accuracy                           0.41     14526
+   macro avg       0.54      0.54      0.41     14526
+weighted avg       0.65      0.41      0.39     14526
+
+====================================
+

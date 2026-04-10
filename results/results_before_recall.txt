@@ -1,0 +1,141 @@
+Model Performance Results
+=========================
+
+Stacked_Ensemble
+-------------------------
+Accuracy : 0.5967
+Precision: 0.3666
+Recall   : 0.5694
+F1 Score : 0.4461
+
+Confusion Matrix:
+[[6251 4037]
+ [1767 2337]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.78      0.61      0.68     10288
+           1       0.37      0.57      0.45      4104
+
+    accuracy                           0.60     14392
+   macro avg       0.57      0.59      0.56     14392
+weighted avg       0.66      0.60      0.62     14392
+
+====================================
+
+RandomForest_Tuned
+-------------------------
+Accuracy : 0.5862
+Precision: 0.3625
+Recall   : 0.5945
+F1 Score : 0.4504
+
+Confusion Matrix:
+[[5997 4291]
+ [1664 2440]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.78      0.58      0.67     10288
+           1       0.36      0.59      0.45      4104
+
+    accuracy                           0.59     14392
+   macro avg       0.57      0.59      0.56     14392
+weighted avg       0.66      0.59      0.61     14392
+
+====================================
+
+XGBoost_Tuned
+-------------------------
+Accuracy : 0.5428
+Precision: 0.3490
+Recall   : 0.6974
+F1 Score : 0.4652
+
+Confusion Matrix:
+[[4950 5338]
+ [1242 2862]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.48      0.60     10288
+           1       0.35      0.70      0.47      4104
+
+    accuracy                           0.54     14392
+   macro avg       0.57      0.59      0.53     14392
+weighted avg       0.67      0.54      0.56     14392
+
+====================================
+
+LightGBM_Tuned
+-------------------------
+Accuracy : 0.5536
+Precision: 0.3540
+Recall   : 0.6854
+F1 Score : 0.4669
+
+Confusion Matrix:
+[[5155 5133]
+ [1291 2813]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.50      0.62     10288
+           1       0.35      0.69      0.47      4104
+
+    accuracy                           0.55     14392
+   macro avg       0.58      0.59      0.54     14392
+weighted avg       0.67      0.55      0.57     14392
+
+====================================
+
+LogisticRegression
+-------------------------
+Accuracy : 0.3723
+Precision: 0.3028
+Recall   : 0.9225
+F1 Score : 0.4560
+
+Confusion Matrix:
+[[1572 8716]
+ [ 318 3786]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.83      0.15      0.26     10288
+           1       0.30      0.92      0.46      4104
+
+    accuracy                           0.37     14392
+   macro avg       0.57      0.54      0.36     14392
+weighted avg       0.68      0.37      0.31     14392
+
+====================================
+
+DecisionTree
+-------------------------
+Accuracy : 0.4414
+Precision: 0.3161
+Recall   : 0.8243
+F1 Score : 0.4570
+
+Confusion Matrix:
+[[2970 7318]
+ [ 721 3383]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.29      0.42     10288
+           1       0.32      0.82      0.46      4104
+
+    accuracy                           0.44     14392
+   macro avg       0.56      0.56      0.44     14392
+weighted avg       0.67      0.44      0.43     14392
+
+====================================
+

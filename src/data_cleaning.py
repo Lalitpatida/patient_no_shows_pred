@@ -46,10 +46,3 @@ def clean_pipeline(df):
 
     print(f'Cleaning complete: {df.shape}')
     return df
-
-
-
-
-# df['is_weekend'] = df['AppointmentDayOfWeek'].isin(['Saturday','Sunday']).astype(int)
-# df['is_old'] = (df['Age'] > 60).astype(int)
-# df['long_wait'] = (df['waitDays'] > 7).astype(int)
