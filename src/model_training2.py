@@ -11,6 +11,8 @@ from imblearn.combine import SMOTETomek
 from imblearn.over_sampling import SMOTE
 from hyperopt import fmin, tpe, hp, Trials, STATUS_OK
 from src.evaluation_plot import save_combined_roc_auc_plot
+import joblib
+import os
 
 
 # -------------------- Train-Test Split --------------------
@@ -201,7 +203,7 @@ def train_models(X_train, X_test, y_train, y_test):
     print("\nClassification Report:")
     print(classification_report(y_test, preds))
 
-    #  FIXED STRUCTURE (IMPORTANT)
+    # FIXED STRUCTURE (IMPORTANT)
     results = {
         "XGBoost": {
             "accuracy": acc,
@@ -217,5 +219,11 @@ def train_models(X_train, X_test, y_train, y_test):
     # ROC Curve
     print("\n=== Generating ROC-AUC Plot ===")
     save_combined_roc_auc_plot({"XGBoost": model}, X_test, y_test)
+    # -------------------- Save Model --------------------
+    os.makedirs("artifacts", exist_ok=True)
+    model_path = "artifacts/xgboost_model.pkl"
+
+    joblib.dump(model, model_path)
+    print(f"\nModel saved at: {model_path}")
 
     return results, {"XGBoost": model}
